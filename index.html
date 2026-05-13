@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Clone - Home</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo" onclick="goTo('index.html')">
+        <span class="material-icons">smart_display</span>
+        <h2>YouTube</h2>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+        <button>
+            <span class="material-icons">search</span>
+        </button>
+    </div>
+
+    <div class="nav-icons">
+        <span class="material-icons">video_call</span>
+        <span class="material-icons">notifications</span>
+
+        <img src="https://randomuser.me/api/portraits/men/10.jpg"
+             class="profile-pic"
+             onclick="goTo('profile.html')">
+    </div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="sidebar-item active"
+             onclick="goTo('index.html')">
+
+            <span class="material-icons">home</span>
+            <p>Home</p>
+
+        </div>
+
+        <div class="sidebar-item"
+             onclick="goTo('subscriptions.html')">
+
+            <span class="material-icons">subscriptions</span>
+            <p>Subscriptions</p>
+
+        </div>
+
+        <div class="sidebar-item"
+             onclick="goTo('library.html')">
+
+            <span class="material-icons">video_library</span>
+            <p>Library</p>
+
+        </div>
+
+        <div class="sidebar-item"
+             onclick="goTo('profile.html')">
+
+            <span class="material-icons">account_circle</span>
+            <p>Profile</p>
+
+        </div>
+
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <div class="video-grid">
+
+            <!-- VIDEO CARD -->
+
+            <div class="video-card"
+                 onclick="playVideo(
+                 'https://www.youtube.com/embed/Ke90Tje7VS0',
+                 'React JS Tutorial'
+                 )">
+
+                <img src="https://img.youtube.com/vi/Ke90Tje7VS0/maxresdefault.jpg"
+                     class="thumbnail">
+
+                <div class="video-info">
+
+                    <img src="https://randomuser.me/api/portraits/men/10.jpg"
+                         class="channel-logo">
+
+                    <div>
+                        <h4>React JS Tutorial</h4>
+                        <p>Programming with Mosh</p>
+                        <p>2.3M views • 1 year ago</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- VIDEO CARD -->
+
+            <div class="video-card"
+                 onclick="playVideo(
+                 'https://www.youtube.com/embed/ZxKM3DCV2kE',
+                 'JavaScript Tutorial'
+                 )">
+
+                <img src="https://img.youtube.com/vi/ZxKM3DCV2kE/maxresdefault.jpg"
+                     class="thumbnail">
+
+                <div class="video-info">
+
+                    <img src="https://randomuser.me/api/portraits/women/20.jpg"
+                         class="channel-logo">
+
+                    <div>
+                        <h4>JavaScript Tutorial</h4>
+                        <p>CodeWithHarry</p>
+                        <p>1.1M views • 6 months ago</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
